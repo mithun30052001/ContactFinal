@@ -8,11 +8,7 @@
           <div class="media">
             <div class="media-left">
               <a href="#">
-                <%# <img class="media-object" src="http://placehold.it/100x100" alt="..."> %>
-                <%# new %>
-                <div style="width:400px; height:auto">
-                  <%= image_tag(@contact.image, style:"width:100%"),contact_path %>
-                </div>
+                <img class="media-object" src="http://placehold.it/100x100" alt="...">
               </a>
             </div>
             <div class="media-body">
@@ -31,14 +27,14 @@
             <% end %>
             <%= link_to contact_path(contact), :method => :delete, class: "btn btn-circle btn-danger btn-xs", title: "Delete", data: { confirm: "Are you sure ?" } do %>
               <i class="glyphicon glyphicon-remove"></i>
-            <% end %>
+            <% end %>            
           </div>
         </td>
       </tr>
 
     <% end %>
-
-    </table>
+      
+    </table>            
   </div>
 
   <div class="text-center">
