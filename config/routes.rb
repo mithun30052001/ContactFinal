@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   root 'welcome#index'
-
+  
   get "/contacts", to: "contacts#index"
   get 'sign_up', to: 'registrations#new'
   post 'sign_up', to: 'registrations#create'
@@ -14,8 +14,8 @@ Rails.application.routes.draw do
   get 'password/reset/edit', to: 'password_resets#edit'
   patch 'password/reset/edit', to: 'password_resets#update'
   resources :contacts
-  
-  
-  
+
+
+
 end
 
